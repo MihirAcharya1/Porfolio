@@ -1,38 +1,344 @@
-.App {
+.main-view {
+  background-color: rgb(241, 241, 241);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height:100%;
+}
+
+.header-container {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to right, purple,orange);
+  /* position: relative;
+  z-index: 1; */
+
+}
+
+.links-head {
+  display: flex;
+  list-style: none;
+  margin: 0px 10px 10px 10px ;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.li-logo {
+  font-family: 'Lora', serif;
+  color: rgb(0, 214, 70);
+  font-weight: 700;
+  font-size: 22px;
+  border-right: 5px solid rgb(0, 214, 70);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.li-logo:hover {
+  color: rgb(0, 255, 0);
+  border-right: 5px solid rgb(0, 255, 0);
+  /* text-shadow: 2px 1px 3px rgb(0, 255, 0); */
+
+
+}
+
+.li-content {
+  list-style: none;
+  font-family: 'Lora', serif;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  padding: 14px;
+  color: rgb(182, 182, 182);
+  transition: 0.5s;
+  border: 2px solid transparent;
+  
+
+
+}
+
+
+
+.li-content:hover {
+
+  color: rgb(255, 255, 255);
+  
+}
+
+.back-view {
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  width: 100%;
+  z-index:0;
+  background-color: gray;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.heading {
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 20px;
+}
+
+
+
+.back-view-image {
+  width: 100%;
+}
+.name-style{  
+  position: absolute;
+}
+.background{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 720px;
+}
+
+.back-scroll-view{
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: -45px;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  border-radius: 5px;
+  
+  
+}
+.content-heading{
+  
+  font-weight: 500;
+  font-size: 1.8em;
+  text-align: center;
+height: 50px;
+padding: 5px;
+  color: rgb(150, 150, 150);
+  border-bottom: 1px solid rgb(209, 209, 209);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  
+}
+.content-div{
+  display: flex;
+  justify-content: space-between;
+}
+.Name-style{
+margin: 20px;
+padding: 10px;
+font-weight: 400;
+color: rgb(102, 102, 102);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.profile-image{
+  width: 200px;
+  border-radius: 50px;
+  margin: 20px;
+  padding: 10px;
+
+}
+.Per-profession{
+  margin: 0px 0px 0px 20px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  color: rgb(80, 80, 80);
+}
+.Animate-style{
+  width: 100%;
+  height: 50px;
+  font-size: 1.3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  /* background-image: linear-gradient(to right,purple, orange); */
+  
+  padding: 10px;
+  text-indent: 50px;
+  
+  
+
+}
+.skill-h{
+  margin: 20px;
+padding: 10px;
+font-weight: 400;
+color: rgb(102, 102, 102);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icon-styles{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  transition: 0.3s all ease-in-out;
+
+}
+.icon-styles:hover{
+  transform: scale(1.1) translateZ(0);
+  
+}
+
+.skill-contain{
+  display: grid;
+  margin: 10px;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.list-style{
+list-style: none;
+font-size: 1.2em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 300;
+padding: 5px;
+margin: 5px;
+}
+.endBar{
+  border-bottom: 2px solid gray;
+  width: 70%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  box-shadow: 1px 1px 25px  rgb(40, 38, 38);
+
+  
+}
+.oui-icon{
+  width: 350px ;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.3s all ease-in-out;
+
+}
+.oui-icon:hover{
+  transform: scale(1.1) translateZ(0);
+}
+.Edu-view{
   text-align: center;
 }
+.edu-h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  padding: 10px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.edu-h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+}
+.edu-h5{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+}
+.icon-footer{
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  cursor: pointer;
+}
+.icon-footer:hover{
+  transform: scale(1.1) translateZ(0);
+}
+.contact{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.D-wrapper{
+  position: fixed;
+   top: 123px;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   /* z-index: -1; */
+   background-color: transparent;
+}
+.D-view{
+  position: fixed;
+  width: 250px;
+  max-width: 250px;
+z-index: 1;
+  top:50%;
+  left: 50%;
+  text-align: start;
+  transform: translate(-50% ,-50%);
+  padding: 10px 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px rgb(161, 157, 157);
+}
+.D-view h1{
+  font-size: 1.2em;
+  font-weight: bold;
+  color:darkgreen;
+  margin-bottom: 10px;
+  /* margin: 5px; */
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+.btn-cancel{
+  width: 40%;
+  height: 25px;
+  margin-left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+border: 1px solid slategray;
+border-radius: 5px;
+cursor: pointer;
+
+
+}
+.btn-download{
+  width: 40%;
+  height: 25px;
+  margin-left: 5%;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold; 
+  border: 1px solid slategray;
+  cursor: pointer;
+border-radius: 5px;
+}
+@media screen  and (max-width:700px)  {
+  .li-content{
+    display: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .header-container{
+    height: 100px;
+    padding: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .back-scroll-view{
+    top:5px;
   }
-}
+  .content-div{
+    flex-direction: column;
+    margin: 0;
+  }
+  .Animate-style{
+    margin: 0 0 0 0;
+    padding: 0;
+    
+  }
+  }

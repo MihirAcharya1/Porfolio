@@ -1,5 +1,6 @@
 import { Fraunces, Inter, JetBrains_Mono } from 'next/font/google';
 import SmoothScroll from '@/components/SmoothScroll';
+import ThreeBackdrop from '@/components/ThreeBackdrop';
 import './globals.css';
 
 const fraunces = Fraunces({
@@ -34,7 +35,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-body antialiased">
-        <SmoothScroll>{children}</SmoothScroll>
+        <ThreeBackdrop />
+        <div className="relative z-10">
+          <SmoothScroll>{children}</SmoothScroll>
+        </div>
       </body>
     </html>
   );

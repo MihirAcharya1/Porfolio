@@ -1,8 +1,8 @@
 'use client';
 
 import { motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
 import { ArrowDownRight, MapPin } from 'lucide-react';
-import Avatar from './Avatar';
 import { profile } from '@/lib/data';
 
 const container = {
@@ -97,8 +97,16 @@ export default function Hero() {
           <motion.div
             animate={shouldReduceMotion ? undefined : { y: [0, -12, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+            className="relative aspect-square overflow-hidden rounded-full border border-copper/40 bg-ink drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
           >
-            <Avatar className="w-full h-auto drop-shadow-[0_20px_60px_rgba(0,0,0,0.45)]" />
+            <Image
+              src="/profile.jpg"
+              alt={`Portrait of ${profile.name}`}
+              fill
+              priority
+              sizes="(min-width: 768px) 384px, 320px"
+              className="object-cover"
+            />
           </motion.div>
         </motion.div>
       </div>
